@@ -13,3 +13,7 @@ php and js script for making iframe overlay with seo technology
   
   
 ![Alt text](/olive.png?raw=true "Screenshot")
+
+Please use Google Structure Testing tool to check SEO!
+
+Awesome!!!
