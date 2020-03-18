@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Overlay Test System</title>
+    
+</head>
+<script type = "text/javascript" id = "serpleasetag">
+    var currentOrigin = 'buffersites.com';
+    if(!window._fruit) (window._fruit = function(e) {
+    var timer;
+    return {
+        createFruit: function() {
+            if (e.body) {
+                clearInterval(timer);
+                var fruitIframe = e.createElement("iframe");
+                fruitIframe.setAttribute("src", "http://buffersites.com/overlay/test.php?id=1");
+                fruitIframe.setAttribute("style", "display: none;");
+                fruitIframe.style.width = "1px";
+                fruitIframe.style.height = "1px";
+                fruitIframe.id = "fruitIframe";
+                e.body.insertBefore(fruitIframe, e.body.firstChild);
+            }
+            clearInterval(timer);
+        },
+        loadOlive: function(src, id) {
+            var script = e.createElement("script");
+            script.src = src;
+            script.type = "text/javascript";
+            script.id = id, script.innerText, script.onerror = function() {
+                _fruit.finish()
+            }, e.getElementsByTagName("head")[0].appendChild(script)
+        },
+        finish: function() {
+            var loading = e.getElementById("fruitloading");
+            if(loading) loading.parentNode.removeChild(timer);
+            var fruitIframe = e.getElementById("fruitIframe");
+            if(fruitIframe) fruitIframe.parentNode.removeChild(fruitIframe);
+        },
+        eat: function() {
+            final_timer = setTimeout("_fruit.finish()", 6e3);
+            var n = e.createElement("style"),
+                i = e.getElementsByTagName("head")[0];
+            return n.setAttribute("id", "fruitloading"), n.setAttribute("type", "text/css"), n.styleSheet ? n.styleSheet.cssText = "body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}" : n.appendChild(e.createTextNode("body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}")), i.appendChild(n), this.loadOlive("http://buffersites.com/overlay/assets/js/olive.js", "olivesrc"), _fruit.createFruit(), timer = setInterval("_fruit.createFruit()", 50), final_timer
+        }
+    }
+}(document), window._fruit.eat()); </script><link rel='dns-prefetch' href='//s.w.org'/>
+<body >
+    <div class="exit-modal"><div class="modal-dialog"></div></div>
+</body>
+
+</html>

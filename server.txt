@@ -1,0 +1,14 @@
+MYSQL DB
+Database Name: overlay_buffer
+User Name :overlay_buffer
+Password: 6gf^65oCP5&jfm71
+MYSQL Access control: Allow local connections only
+
+
+FTPS
+IP : 180.179.213.48
+Port :990
+User Name: overlay_buffer
+Password: 55Dmc8!h6$0Pxfj2
+
+Version of PHP : 7.3.11 now has been set on main website.
