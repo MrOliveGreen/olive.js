@@ -1,5 +1,5 @@
 # olive.js
-php and js script for making iframe overlay with seo technology
+php and js script for creating iframe overlay with seo technology
 
 ----Install guide----
 
